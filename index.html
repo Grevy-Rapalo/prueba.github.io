@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Portafolio</title>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var projects = $(".project-container");
+      var projectsPerRow = 6;
+      var numRows = Math.ceil(projects.length / projectsPerRow);
+
+      for (var i = 0; i < numRows; i++) {
+        var startIndex = i * projectsPerRow;
+        var endIndex = startIndex + projectsPerRow;
+        var rowProjects = projects.slice(startIndex, endIndex);
+        rowProjects.wrapAll("<div class='projects-row'></div>");
+      }
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="hero">
+
+
+    <div class="hero-text">
+      <h1>Grevy Rápalo</h1>
+      <h2>Analista de Datos y Estadística</h2>
+    </div>
+  </section>
+  
+  <section id="about" style="overflow: hidden;">
+    <div style="text-align: center;">
+        <h2>Sobre mí</h2>
+        <hr>
+      </div>
+    <div class="image-container" style="float: right; width: 50%;">
+      <img src="imagen_mia.jpg">
+    </div>
+  
+    <div style="float: left; width: 50%;">
+      
+  
+      <p>¡Bienvenidos a mi portafolio personal!
+        Soy un apasionado de los números, las estadísticas y el análisis de datos. Con una Licenciatura en Matemáticas con Orientación en Estadística y experiencia laboral en el campo, me he especializado en transformar datos en conocimientos valiosos y soluciones impactantes.
+        Enfocado, tenaz y orientado a resultados, busco constantemente nuevos desafíos y oportunidades para crecer y aprender. Mis habilidades en análisis matemáticos y estadísticos, junto con mi experiencia en programación, me permiten abordar problemas complejos y brindar soluciones efectivas.
+        A través de este portafolio, compartiré mis proyectos destacados, experiencias laborales y habilidades técnicas, demostrando mi capacidad para convertir datos en información significativa y proporcionar perspectivas valiosas.
+        ¡Espero que disfrutes explorando mi portafolio y descubriendo cómo el análisis de datos puede impulsar el éxito empresarial y la toma de decisiones estratégicas!</p>
+    </div>
+  </section>
+  
+  
+  
+  
+  <section id="skills">
+    <div style="text-align: center;">
+        <h2>Habilidades</h2>
+        <hr>
+      </div>
+    <ul class="logo-list">
+      <li><img src="https://i0.wp.com/hardsoftsecurity.es/wp-content/uploads/2016/06/mysql-logo-1329320869.jpg?resize=635%2C328&ssl=1" alt="MySQL"></li>
+      <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2560px-R_logo.svg.png" alt="R"></li>
+      <li><img src="https://logos-marcas.com/wp-content/uploads/2022/01/Power-BI-Emblema.jpg" alt="Power BI"></li>
+      <li><img src="https://www.pngall.com/wp-content/uploads/2016/05/Python-Logo-Free-Download-PNG.png" alt="Python"></li>
+      <li><img src="https://cdn.freebiesupply.com/logos/thumbs/2x/flask-logo.png" alt="Flask"></li>
+      <li><img src="https://datascientest.com/es/wp-content/uploads/sites/7/2021/04/illu_numpy_blog-125.png" alt="Numpy"></li>
+      <li><img src="https://numfocus.org/wp-content/uploads/2016/07/pandas-logo-300.png" alt="Pandas"></li>
+      <li><img src="https://www.comparasoftware.com/wp-content/uploads/2018/09/logoIBM-SPSS.png" alt="SPSS"></li>
+      <li><img src="https://www.fomentformacio.com/wp/wp-content/uploads/2022/12/microsoft-office-excel-2019.png" alt="excel"></li>
+    </ul>
+  </section>
+  
+  <section id="projects">
+    <div style="text-align: center;">
+        <h2>Proyectos</h2>
+        <hr>
+      </div>
+
+
+    <ul class="projects-row">
+     
+
+        <li>
+            <div class="project-container">
+              <div class="image-container">
+                <a href="proyecto1.html" class="image-link">
+                  <img src="pyt1.jpg" alt="Proyecto 1">
+                  <div class="overlay">
+                    <p>POBLACION MUNDIAL. MORTALIDAD INFANTIL Y ESPERANZA DE VIDA</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+     
+     
+      <li>
+        <div class="project-container">
+          <div class="image-container">
+            <a href="proyecto2.html" class="image-link">
+                <img src="img1.jpg" alt="Proyecto 2">
+                <div class="overlay">
+                    <p>Proy 2/p>
+                </div>
+            </a>
+          </div>
+        </div>
+      </li>
+      
+
+
+      <li>
+        <div class="project-container">
+          <div class="image-container">
+            <img src="img1.jpg" alt="Proyecto 1">
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="project-container">
+          <div class="image-container">
+            <img src="img1.jpg" alt="Proyecto 1">
+          </div>
+          
+        </div>
+      </li>
+
+      <li>
+        <div class="project-container">
+          <div class="image-container">
+            <img src="img1.jpg" alt="Proyecto 1">
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="project-container">
+            <img src="img1.jpg" alt="Proyecto 1">
+          </div>
+          
+        </div>
+      </li>
+    </ul>
+  </section>
+  
+  <section id="contact">
+    <div style="text-align: center;">
+        <h2>Contacto</h2>
+        <hr>
+      </div>
+    <p>Puedes contactarme a través de los siguientes medios:</p>
+    <ul>
+      <li>Email: stibenrapalog@gmail.com</li>
+      <li>Teléfono: +504-89091504</li>
+     <p></p> 
+    <ul class="contact-list">
+      <li><a href="https://www.linkedin.com/in/grevy-rapalo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt="LinkedIn"></a></li>
+      <li><a href="https://github.com/tu-usuario"><img src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png" alt="GitHub"></a></li>
+    </ul>
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 Grevy Rapalo</p>
+  </footer>
+</body>
+</html>
+
+
